@@ -19,7 +19,7 @@
     let day = d.getDay();
     let jour = weekday[day];
     let mois =  month[d.getMonth()];
-   let dateEnglish =jour+" "+d.getDate()+" "+mois+" " +d.getFullYear();
+    let dateEnglish =jour+" "+d.getDate()+" "+mois+" " +d.getFullYear();
    document.querySelector('#target').innerHTML = dateEnglish;
 
 })();
