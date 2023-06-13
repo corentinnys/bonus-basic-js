@@ -90,17 +90,20 @@
     ];
 
     // your code here
-    let array = [];
-    for (items of people)
-    {
-        array.push(items.age);
+    document.querySelector('#run').onclick = function () {
+        let array = [];
+        for (items of people)
+        {
+            array.push(items.age);
+        }
+
+        console.log(array.reduce(myFunc));
+
+        function myFunc(total, age) {
+            total = age + total
+            return  total;
+        }
     }
 
-    console.log(array.reduce(myFunc));
-
-    function myFunc(total, age) {
-        total = age + total
-        return  total;
-    }
 
 })();
