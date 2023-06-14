@@ -11,6 +11,8 @@
 // You will have time to focus on it later.
 
 (function() {
+
+
     document.querySelector('#pass-one').onkeyup = function (event) {
         let value = event.currentTarget.value.length;
         event.currentTarget.disabled =false;
